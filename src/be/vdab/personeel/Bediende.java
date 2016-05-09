@@ -5,6 +5,8 @@
  */
 package be.vdab.personeel;
 
+import be.vdab.util.ExceptionVoorWerknemer;
+
 /**
  *
  * @author omer.aldur
@@ -16,7 +18,7 @@ public class Bediende extends Werknemer {
     public Bediende() {
     }
 
-    public Bediende(int personeelsNummer, String naam, double maandWedde) {
+    public Bediende(int personeelsNummer, String naam, double maandWedde) throws ExceptionVoorWerknemer {
         super(personeelsNummer, naam);
         setMaandWedde(maandWedde);
     }

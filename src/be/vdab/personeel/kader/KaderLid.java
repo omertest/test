@@ -33,5 +33,9 @@ public class KaderLid extends Bediende {
     public String toString() {
         return personeelsNummer + "\t" + naam + "\t" + maandWedde + "\t" + functieTitel;
     }
+        @Override
+    public double getVerloning() {
+        return maandWedde;
+    }
 
 }
